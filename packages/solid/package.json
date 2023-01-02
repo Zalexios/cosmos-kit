@@ -1,7 +1,8 @@
 {
-  "name": "vite-template-solid",
-  "version": "0.0.0",
-  "description": "",
+  "name": "@cosmos-kit/solid",
+  "version": "0.0.1",
+  "description": "cosmos-kit wallet connector",
+  "author": "developers@cosmology.tech",
   "scripts": {
     "start": "vite",
     "dev": "vite",
@@ -10,11 +11,30 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "@chain-registry/types": "0.13.1",
+    "@cosmjs/cosmwasm-stargate": "0.29.0",
+    "@cosmjs/stargate": "0.29.0",
+    "@typescript-eslint/eslint-plugin": "5.38.0",
+    "@typescript-eslint/parser": "5.38.0",
+    "cross-env": "7.0.2",
+    "eslint": "8.23.1",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-plugin-prettier": "4.0.0",
+    "eslint-plugin-simple-import-sort": "8.0.0",
+    "eslint-plugin-unused-imports": "2.0.0",
+    "prettier": "2.1.2",
     "typescript": "^4.9.4",
     "vite": "^4.0.3",
     "vite-plugin-solid": "^2.5.0"
   },
   "dependencies": {
-    "solid-js": "^1.6.6"
+    "@hope-ui/core": "1.0.0-next.11",
+    "solid-js": "^1.6.6",
+    "@cosmos-kit/core": "^0.27.13",
+    "@emotion/styled": "11.10.5"
+  },
+  "peerDependencies": {
+    "@cosmjs/cosmwasm-stargate": ">= 0.28",
+    "@cosmjs/stargate": ">= 0.28"
   }
 }

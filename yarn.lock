@@ -3637,6 +3637,11 @@
   resolved "https://registry.npmjs.org/@floating-ui/core/-/core-1.0.4.tgz#03066eaea8e9b2a2cd3f5aaa60f1e0f580ebe88e"
   integrity sha512-FPFLbg2b06MIw1dqk2SOEMAMX3xlrreGjcui5OTxfBDtaKTmh0kioOVjT8gcfl58juawL/yF+S+gnq8aUYQx/Q==
 
+"@floating-ui/core@^1.0.5":
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@floating-ui/core/-/core-1.0.5.tgz#ada3cca622fe7b52d7b9ead97ddbed5b98925c66"
+  integrity sha512-iDdOsaCHZH/0FM0yNBYt+cJxJF9S5jrYWNtDZOiDFMiZ7uxMJ/71h8eTwoVifEAruv9p9rlMPYCGIgMjOz95FQ==
+
 "@floating-ui/dom@^1.0.1":
   version "1.0.10"
   resolved "https://registry.npmjs.org/@floating-ui/dom/-/dom-1.0.10.tgz#a2299e942a06ca35cfdaeb4d4709805c9bb9c032"
@@ -3644,12 +3649,53 @@
   dependencies:
     "@floating-ui/core" "^1.0.4"
 
+"@floating-ui/dom@^1.0.4":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@floating-ui/dom/-/dom-1.1.0.tgz#29fea1344fdef15b6ba270a733d20b7134fee5c2"
+  integrity sha512-TSogMPVxbRe77QCj1dt8NmRiJasPvuc+eT5jnJ6YpLqgOD2zXc5UA3S1qwybN+GVCDNdKfpKy1oj8RpzLJvh6A==
+  dependencies:
+    "@floating-ui/core" "^1.0.5"
+
 "@headlessui/react@^1.6.6":
   version "1.7.5"
   resolved "https://registry.npmjs.org/@headlessui/react/-/react-1.7.5.tgz#c8864b0731d95dbb34aa6b3a60d0ee9ae6f8a7ca"
   integrity sha512-UZSxOfA0CYKO7QDT5OGlFvesvlR1SKkawwSjwQJwt7XQItpzRKdE3ZUQxHcg4LEz3C0Wler2s9psdb872ynwrQ==
   dependencies:
     client-only "^0.0.1"
+
+"@hope-ui/core@1.0.0-next.11":
+  version "1.0.0-next.11"
+  resolved "https://registry.yarnpkg.com/@hope-ui/core/-/core-1.0.0-next.11.tgz#3f89e26bbbce45f230c27ede8544f807c76833dc"
+  integrity sha512-IkMbZc6gSHKSp8jZEfqigEg8GP81TCG8CdRNOX+M+zERDBWX5aGSqn9ZllLqCjKtxplGGyFvO3w+ixUqbvrJcg==
+  dependencies:
+    "@floating-ui/dom" "^1.0.4"
+    "@hope-ui/primitives" "^1.0.0-next.11"
+    "@hope-ui/styles" "^1.0.0-next.11"
+    "@hope-ui/utils" "^1.0.0-next.11"
+
+"@hope-ui/primitives@^1.0.0-next.11":
+  version "1.0.0-next.11"
+  resolved "https://registry.yarnpkg.com/@hope-ui/primitives/-/primitives-1.0.0-next.11.tgz#4f450665bfe5c59675439e06b640e5891cc57b3e"
+  integrity sha512-72nN44BWVgD84YfQUfEjThEzp6rZ0fMllyXdMG1yOrZO4UCxmfDOr0R4QORtzL77kAcKkGSjlNi2/Kfwvl95xw==
+  dependencies:
+    "@hope-ui/utils" "^1.0.0-next.11"
+    "@solid-primitives/media" "^2.0.4"
+
+"@hope-ui/styles@^1.0.0-next.11":
+  version "1.0.0-next.11"
+  resolved "https://registry.yarnpkg.com/@hope-ui/styles/-/styles-1.0.0-next.11.tgz#bebb2c49068a097653ba6d25cef6aaa601048e74"
+  integrity sha512-DbSHUFjtoM9hFR86jUG5E9YUOr3fnqT3wyvxx75mespv1AA8h8xp0qjv4hcq7s6gdRtAix6nHInhZG23ng5dCg==
+  dependencies:
+    "@hope-ui/utils" "^1.0.0-next.11"
+    dset "3.1.2"
+
+"@hope-ui/utils@^1.0.0-next.11":
+  version "1.0.0-next.11"
+  resolved "https://registry.yarnpkg.com/@hope-ui/utils/-/utils-1.0.0-next.11.tgz#b9887ca2dc0fd98d657533257311a505c75c9999"
+  integrity sha512-uNa2D6QIFfKw0mzBakKtWl659omRTjPrP2+Yt4e2ckr/8t11a8R5S8CNTPRQ34aH9r7L9vTJNAIaZ5awKuw/zA==
+  dependencies:
+    "@solid-primitives/refs" "^0.3.4"
+    "@solid-primitives/utils" "^4.0.0"
 
 "@humanwhocodes/config-array@^0.10.4":
   version "0.10.7"
@@ -5313,6 +5359,50 @@
   integrity sha512-BPS4ynJW/o92PUR4wgriz2Ud5gpST5vz6GQfMixEDK0Z8ZCUv2M7SkBLykH56T++Xs+8ln9zTGbOvNGIe02/jw==
   dependencies:
     "@sinonjs/commons" "^1.7.0"
+
+"@solid-primitives/event-listener@^2.2.4":
+  version "2.2.4"
+  resolved "https://registry.yarnpkg.com/@solid-primitives/event-listener/-/event-listener-2.2.4.tgz#2f571b992359abd01cdfae4efaa0bad204680162"
+  integrity sha512-O/ppM0SpXWtNC7AHv1bQA9Dy6pj3NUM06MhSV9xwVv4N06PmlNYhGLDSPT1Esesm6b0fDgCXB5V+AgCSEzQd/w==
+  dependencies:
+    "@solid-primitives/utils" "^4.0.0"
+
+"@solid-primitives/immutable@^0.1.4":
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/@solid-primitives/immutable/-/immutable-0.1.4.tgz#8876331fc31be3e7250700174d714cc9ee59bd95"
+  integrity sha512-9oLK8ihIjG5FZv74KoXXyKErxgGxGZsdevsIKB0ugTreBBmozHPcYTjoYFL/sHoqs2ZNMlmfNQ3kduvrvKG2RQ==
+  dependencies:
+    "@solid-primitives/utils" "^4.0.0"
+
+"@solid-primitives/media@^2.0.4":
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/@solid-primitives/media/-/media-2.0.4.tgz#1c29d7d7525ea88b22203edb13197d50ac513b67"
+  integrity sha512-MZkdUlV3qJQts4b7ZfAldbFGB1neH64rwHsnTmIeF2Zj8gWjYcYtJ36SwkRs3NjHQ53uQliZ+DtMXiCeapNw/g==
+  dependencies:
+    "@solid-primitives/event-listener" "^2.2.4"
+    "@solid-primitives/rootless" "^1.2.1"
+    "@solid-primitives/utils" "^4.0.0"
+
+"@solid-primitives/refs@^0.3.4":
+  version "0.3.4"
+  resolved "https://registry.yarnpkg.com/@solid-primitives/refs/-/refs-0.3.4.tgz#d9d9d82fcb2f0e7fe49f1fc10089381c60a5c7f7"
+  integrity sha512-XqX5PRCMnCOuLQqTsx3tRYs/oAyQsTXtmkB+tBlYoaqxLrJFBebPRVT/kFWN2Jxb6eZYAXDB5zZejS8nizsd8Q==
+  dependencies:
+    "@solid-primitives/immutable" "^0.1.4"
+    "@solid-primitives/rootless" "^1.2.1"
+    "@solid-primitives/utils" "^4.0.0"
+
+"@solid-primitives/rootless@^1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@solid-primitives/rootless/-/rootless-1.2.1.tgz#17d3a7428ebc3d2c7fbf2ec96093edad3b7ad217"
+  integrity sha512-8RpdyS1e58PQbDjgjpyCh+IGoX3QEs/2LauMfl94eXJ5d/o1y/c6P61z9XqQm+Bx1Otdgx4nbFCoF7HPqa0mwg==
+  dependencies:
+    "@solid-primitives/utils" "^4.0.0"
+
+"@solid-primitives/utils@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@solid-primitives/utils/-/utils-4.0.0.tgz#3c592287519dc885290d134f8aff3f0f6f4b4720"
+  integrity sha512-fGsJy8Z8YiwogpiezD7TWjI62UCb0JAHJWdoXWGrggrn4bfToZotKkabiB0IVFMkWVE1ZcrkvZT3bkmqGnK0ng==
 
 "@stablelib/aead@^1.0.1":
   version "1.0.1"
@@ -8167,6 +8257,11 @@ dot-prop@^5.1.0:
   integrity sha512-QM8q3zDe58hqUqjraQOmzZ1LIH9SWQJTlEKCH4kJ2oQvLZk7RbQXvtDM2XEq3fwkV9CCvvH4LA0AV+ogFsBM2Q==
   dependencies:
     is-obj "^2.0.0"
+
+dset@3.1.2:
+  version "3.1.2"
+  resolved "https://registry.yarnpkg.com/dset/-/dset-3.1.2.tgz#89c436ca6450398396dc6538ea00abc0c54cd45a"
+  integrity sha512-g/M9sqy3oHe477Ar4voQxWtaPIFw1jTdKZuomOjhCcBx9nHUNn0pu6NopuFFrTh/TRZIKEj+76vLWFu9BNKk+Q==
 
 duplexer@^0.1.1:
   version "0.1.2"
